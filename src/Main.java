@@ -8,19 +8,19 @@
  */
 public final class Main {
     /**
-     * Uzivatelsky vstup.
-     */
-    private static final Input in = new Input();
-
-    /**
      * Hlavni metoda tridy, entrypoint do programu.
      *
      * @param args argumenty prikazoveho radku, zadne argumenty jsou pouzivane.
      */
     public static void main(String[] args) {
-        int[][] mat = in.getMatrix();
-        int[][] newMat = Matrix.reduceMatrixOptimized(mat);
-        if (newMat == null) newMat = Matrix.reduceMatrix(mat);
-        Matrix.printReducedMatrix(newMat);
+        Input in; // Vzdy nacita vstup, a pokud je "validni" (t.z. ma vhodny rozmer matici) tak to zpracovava.
+        while ((in = new Input()).isValid()) {
+            int[][] mat = in.getMatrix();
+            int[][] newMat = Matrix.reduceMatrixOptimized(mat);
+            if (newMat == null) newMat = Matrix.reduceMatrix(mat);
+            Matrix.printReducedMatrix(newMat);
+        }
+
+        System.out.println("Program se ukonci.");
     }
 }

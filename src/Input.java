@@ -23,8 +23,8 @@ public final class Input {
     public Input() {
         this.scanner = new Scanner(System.in);
         int n = readMatrixSize();
-        if (n < 0) System.exit(0);
-        this.matrix = readMatrix(n, n);
+        if (n <= 0) this.matrix = null;
+        else this.matrix = readMatrix(n, n);
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -36,6 +36,14 @@ public final class Input {
      */
     public int[][] getMatrix() {
         return matrix;
+    }
+
+    /**
+     * Kontroluje kdyz uzivatel zadal vhodny rozmer matice (vetsi nebo rovna se jedne.)
+     * @return true kdyz se potrebuje zpracovat vstupni matice, jinak false.
+     */
+    public boolean isValid() {
+        return matrix != null;
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////
