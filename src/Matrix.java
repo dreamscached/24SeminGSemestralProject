@@ -42,6 +42,9 @@ public final class Matrix {
                 System.out.println(); // Vytiskuje newline a ukonci radek
             }
         }
+
+        // Vytisknout navic jeden line break
+        System.out.println();
     }
 
     /**
