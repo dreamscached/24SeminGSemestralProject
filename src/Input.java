@@ -55,7 +55,7 @@ public final class Input {
      */
     private int readMatrixSize() {
         System.out.println("Rozmer matice");
-        return scanner.nextInt();
+        return nextIntSafe();
     }
 
     /**
@@ -76,7 +76,24 @@ public final class Input {
         System.out.println("Zadej matici");
         for (int i = 0; i < m; i++)
             for (int j = 0; j < n; j++)
-                matrix[i][j] = scanner.nextInt();
+                matrix[i][j] = nextIntSafe();
         return matrix;
+    }
+
+    /**
+     * Bezpecna metoda nacteni cele hodnoty ze skeneru. Kdyz skener nema zadnou celou hodnotu dal,
+     * tak ukonci program.
+     * @return celou hodnotu ze skeneru nebo ukonci program kdyz zadnou ten skener dal nema.
+     */
+    private int nextIntSafe() {
+        // Kdyz skener muze nacist pristi celou hodnotu tak nech to nacte a vrati.
+        if (scanner.hasNextInt()) return scanner.nextInt();
+
+        // Jinak o tom upozornuje uzivatele a ukonci program s kodem 1.
+        else System.out.println("Ocekava se cela hodnota. Program se ukonci.");
+        System.exit(1);
+
+        // Presto ze tato metoda ukonci program pomoci System.exit(1), stale tady se potrebuje return.
+        return 0;
     }
 }
