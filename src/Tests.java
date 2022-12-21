@@ -24,13 +24,6 @@ public final class Tests {
     private static void testOptimizationUtils() {
         beginTestSuite("testOptimizationUtils");
 
-        /* Testovani isSq0UnreducibleMatrix */
-        beginTest("isSq0UnreducibleMatrix");
-        doTest(Matrix.isSq0UnreducibleMatrix(new int[][]{}));
-        doTest(!Matrix.isSq0UnreducibleMatrix(new int[][]{{1}}));
-        doTest(!Matrix.isSq0UnreducibleMatrix(new int[][]{{1, 2}, {3, 4}}));
-        endTest();
-
         /* Testovani isSq1UnreducibleMatrix */
         beginTest("isSq1UnreducibleMatrix");
         doTest(!Matrix.isSq1UnreducibleMatrix(new int[][]{}));

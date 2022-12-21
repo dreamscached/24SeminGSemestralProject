@@ -20,18 +20,13 @@ public final class Matrix {
      * @param mat matice
      */
     public static void printReducedMatrix(int[][] mat) {
-        // Kdyz je to prazdna matice, tak nic se nepotrebuje vytiskovat, tak jenom vytiskne
-        // tenhle hlavicek.
-        if (isSq0UnreducibleMatrix(mat)) {
-            System.out.println("Redukovana matice (0 x 0)");
-
-            // V pripade kdyz je to matice z jenom jednim cislem, tak to taky muzeme optimalizovat a
-            // vytisknout jenom mat[0][0].
-        } else if (isSq1UnreducibleMatrix(mat)) {
+        // V pripade kdyz je to matice z jenom jednim cislem, tak to taky muzeme optimalizovat a
+        // vytisknout jenom mat[0][0].
+        if (isSq1UnreducibleMatrix(mat)) {
             System.out.println("Redukovana matice (1 x 1)");
             System.out.println(mat[0][0]);
 
-            // Ve vsech ostatnich pripadech pouzijeme cykly.
+        // Ve vsech ostatnich pripadech pouzijeme cykly.
         } else {
             System.out.printf("Redukovana matice (%d x %d)\n", mat.length, mat[0].length);
             String format = "%" + findLongestElementCharLength(mat) + "d"; // Nachazi nejdelsi cislo pro padding
@@ -106,17 +101,6 @@ public final class Matrix {
      * redukovana protoze nema tvar [0 X, Y 0] nebo [X 0, 0 Y].
      */
     public static final int NON_REDUCIBLE_SQ2_MATRIX = -1;
-
-    /**
-     * Kontroluje kdyz zadana matice je prazdna matice a nema
-     * zadne prvki.
-     *
-     * @param mat matice
-     * @return true kdyz matice nema prvky, jinak false
-     */
-    public static boolean isSq0UnreducibleMatrix(int[][] mat) {
-        return mat.length == 0;
-    }
 
     /**
      * Kontroluje kdyz zadana matice je jenom jedne cislo.
@@ -296,8 +280,8 @@ public final class Matrix {
      */
     @SuppressWarnings("EnhancedSwitchMigration") // Ztlumi varovani o tom ze je mozna pouzit 'enhanced switch'
     public static int[][] reduceMatrixOptimized(int[][] mat) {
-        // Kdyz matice je prazdna nebo ma jenom jeden prvek
-        if (Matrix.isSq0UnreducibleMatrix(mat) || Matrix.isSq1UnreducibleMatrix(mat)) return mat;
+        // Kdyz matice ma jenom jeden prvek
+        if (Matrix.isSq1UnreducibleMatrix(mat)) return mat;
 
         // Kdyz to muze vubec preskocit tak vrati puvodni matice.
         if (canSkipReduction(mat)) return mat;
