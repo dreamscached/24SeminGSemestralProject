@@ -21,5 +21,6 @@ jobs:
         shell: bash
         run: |
           mkdir out
+          shopt -s globstar
           javac src/**/*.java -d out
           java -cp out cz.tul.dreamscached.redukce.Test
