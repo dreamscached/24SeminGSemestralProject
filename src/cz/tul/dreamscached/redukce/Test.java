@@ -79,9 +79,6 @@ public final class Test {
         /* Testovani reduceMatrixOptimized */
         beginTest("reduceMatrixOptimized");
 
-        // Tady je prazdna matice, tak vrati stejnou prazdnou matice.
-        doTest(Arrays.deepEquals(Matrix.reduceMatrixOptimized(new int[][]{}), new int[][]{}));
-
         // Tady je skalar, matice z jednoho prvku, a vrati stejnou matice.
         doTest(Arrays.deepEquals(Matrix.reduceMatrixOptimized(new int[][]{{1}}), new int[][]{{1}}));
 
