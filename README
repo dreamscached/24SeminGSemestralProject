@@ -1,23 +1,23 @@
-                            24SeminGSemestralProject
+                                        24SeminGSemestralProject
 
-Tento repositář obsahuje moje semestralní práce, její zdrojový kód a všechní soubory
-(diagramy, obrázky, TeX dokumenty atd.) které jsem použil při vytváření dokumentaci
-a prezentaci.
+            Tento repositář obsahuje moje semestralní práce, její zdrojový kód a všechní soubory
+            (diagramy, obrázky, TeX dokumenty atd.) které jsem použil při vytváření dokumentaci
+            a prezentaci.
 
-                                    * * *
+                                                * * *
 
 
-                          Mapa zdrojového stromu:
+                                      Mapa zdrojového stromu:
 
-  * .github ............................................... GitHub Actions workflowy
-  * src ...................................................... zdrojový kód programu
-  * doc ................................................... prezentace a dokumentace
-     * src .............................................. soubory, které jsem použil
-       * diag ................................. diagramy (vývojový diagram programu)
-       * img ............................................................... obrázky
-       * tex ..................... TeX dokumenty (použil jsem je pro kreslení matic)
-       * 24SeminGPresentation.odp .......... zdroj prezentaci v OpenDocument formatu
-       * 24SeminGDokumentace.odp  ......... zdroj dokumentaci v OpenDocument formatu
-  * .gitignore ............................. seznam souborů které Git musí ignorovát
-  * LICENSE ...................................................... GNU GPLv3 Licence
-  * README .................................................. tento textový dokument
+              * .github ............................................... GitHub Actions workflowy
+              * src ...................................................... zdrojový kód programu
+              * doc ................................................... prezentace a dokumentace
+                 * src .............................................. soubory, které jsem použil
+                   * diag ................................. diagramy (vývojový diagram programu)
+                   * img ............................................................... obrázky
+                   * tex ..................... TeX dokumenty (použil jsem je pro kreslení matic)
+                   * 24SeminGPresentation.odp .......... zdroj prezentaci v OpenDocument formatu
+                   * 24SeminGDokumentace.odp  ......... zdroj dokumentaci v OpenDocument formatu
+              * .gitignore ............................. seznam souborů které Git musí ignorovát
+              * LICENSE ...................................................... GNU GPLv3 Licence
+              * README .................................................. tento textový dokument
