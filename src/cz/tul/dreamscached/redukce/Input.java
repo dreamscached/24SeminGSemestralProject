@@ -1,7 +1,9 @@
+package cz.tul.dreamscached.redukce;
+
 import java.util.Scanner;
 
 /**
- * Trida Input zpracovava vstup a ho uklada.
+ * Trida cz.tul.dreamscached.redukce.Input zpracovava vstup a ho uklada.
  *
  * @author Herman S.
  * @version 1.0.0 20/12/2022
@@ -18,7 +20,7 @@ public final class Input {
     private final int[][] matrix;
 
     /**
-     * Sestavuje novou instanci classu Input a nacita rozmer matici a matici z stdin.
+     * Sestavuje novou instanci classu cz.tul.dreamscached.redukce.Input a nacita rozmer matici a matici z stdin.
      */
     public Input() {
         this.scanner = new Scanner(System.in);

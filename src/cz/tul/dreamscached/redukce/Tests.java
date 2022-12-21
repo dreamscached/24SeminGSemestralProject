@@ -1,7 +1,9 @@
+package cz.tul.dreamscached.redukce;
+
 import java.util.Arrays;
 
 /**
- * Trida Tests je testovaci trida pro kontrolu spravne praci kodu tohoto programu.
+ * Trida cz.tul.dreamscached.redukce.Tests je testovaci trida pro kontrolu spravne praci kodu tohoto programu.
  *
  * @author Herman S.
  * @version 1.0.0 20/12/2022

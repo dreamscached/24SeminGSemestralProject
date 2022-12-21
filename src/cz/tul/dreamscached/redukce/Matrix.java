@@ -1,12 +1,14 @@
+package cz.tul.dreamscached.redukce;
+
 /**
- * Trida Matrix je utility class pro zpracovani matic.
+ * Trida cz.tul.dreamscached.redukce.Matrix je utility class pro zpracovani matic.
  *
  * @author Herman S.
  * @version 1.0.0 20/12/2022
  */
 public final class Matrix {
     /**
-     * Soukromy konstruktor protoze Matrix je utility class a ma jenom staticke metody.
+     * Soukromy konstruktor protoze cz.tul.dreamscached.redukce.Matrix je utility class a ma jenom staticke metody.
      */
     private Matrix() {
 
