@@ -1,7 +1,7 @@
 package cz.tul.dreamscached.redukce;
 
 /**
- * Trida cz.tul.dreamscached.redukce.Matrix je utility class pro zpracovani matic.
+ * Trida Matrix je utility class pro zpracovani matic.
  *
  * @author Herman S.
  * @version 1.0.0 20/12/2022

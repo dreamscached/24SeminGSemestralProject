@@ -1,7 +1,7 @@
 package cz.tul.dreamscached.redukce;
 
 /**
- * cz.tul.dreamscached.redukce.Main je hlavni trida programu ktery redukuje matice.
+ * Main je hlavni trida programu ktery redukuje matice.
  * <p>
  * Semestralni prace cislo 24.
  *

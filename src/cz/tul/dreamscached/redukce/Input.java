@@ -3,7 +3,7 @@ package cz.tul.dreamscached.redukce;
 import java.util.Scanner;
 
 /**
- * Trida cz.tul.dreamscached.redukce.Input zpracovava vstup a ho uklada.
+ * Trida Input zpracovava vstup a ho uklada.
  *
  * @author Herman S.
  * @version 1.0.0 20/12/2022
