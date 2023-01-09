@@ -161,6 +161,10 @@ public final class Matrix {
      * @return pole s delkou 2 kde 1. prvek je radek a 2. prvek je sloupec
      */
     public static int[] findSingleNonZeroValuePosition(int[][] mat) {
+        // V pripade kdyz to redukuje do [1] tak to vyhazuje IndexOutOfBounds,
+        // a to nepotrebujeme
+        if (isSq1UnreducibleMatrix(mat)) return null;
+
         // V tomto dvojitem cyklu pro kazdy prvek se provadi kontrola
         // kdyz je to sloupec a radek ktere se potrebuje odstranit
         for (int i = 0; i < mat.length; i++)
