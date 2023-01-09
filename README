@@ -12,6 +12,7 @@ a prezentaci.
   * .github ............................................... GitHub Actions workflowy
   * src ...................................................... zdrojový kód programu
   * doc ................................................... prezentace a dokumentace
+     * javadoc .......................................... dokumentace Java (Javadoc)
      * src .............................................. soubory, které jsem použil
        * diag ................................. diagramy (vývojový diagram programu)
        * img ............................................................... obrázky
