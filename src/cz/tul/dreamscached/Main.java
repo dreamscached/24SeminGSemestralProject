@@ -15,7 +15,7 @@ public class Main {
 
             if (!s.hasNextInt()) {
                 System.out.println("Spatny vstup!");
-                continue;
+                break;
             }
 
             int o = s.nextInt();
