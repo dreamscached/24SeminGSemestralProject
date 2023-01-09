@@ -25,4 +25,4 @@ jobs:
           javac src/**/*.java -d out
       - name: Run tests
         shell: bash
-        run: java -cp out cz.tul.dreamscached.redukce.Test
+        run: java -cp out cz.tul.dreamscached.redukce.TestMain

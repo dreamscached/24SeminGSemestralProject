@@ -3,13 +3,13 @@ package cz.tul.dreamscached.redukce;
 import java.util.Arrays;
 
 /**
- * Trida Test je testovaci trida pro kontrolu spravne praci kodu tohoto programu.
+ * Trida TestMain je testovaci trida pro kontrolu spravne praci kodu tohoto programu.
  *
  * @author Herman S.
  * @version 1.0.0 20/12/2022
  */
-public final class Test {
-    private Test() {
+public final class TestMain {
+    private TestMain() {
 
     }
 
