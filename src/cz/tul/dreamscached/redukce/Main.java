@@ -9,6 +9,10 @@ package cz.tul.dreamscached.redukce;
  * @version 1.0.0 20/12/2022
  */
 public final class Main {
+    private Main() {
+
+    }
+
     /**
      * Hlavni metoda tridy, entrypoint do programu.
      *

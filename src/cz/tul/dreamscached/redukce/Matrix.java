@@ -245,7 +245,6 @@ public final class Matrix {
      * @param mat matice
      * @param n   cislo sloupcu
      * @return nova matice bez zadaneho sloupce
-     * @apiNote
      */
     public static int[][] popColumn(int[][] mat, int n) {
         // newMat je nova matice s poctem sloupcu o jeden mensi nez puvodni matice,

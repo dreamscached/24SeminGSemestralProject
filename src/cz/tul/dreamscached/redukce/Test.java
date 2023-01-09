@@ -9,6 +9,14 @@ import java.util.Arrays;
  * @version 1.0.0 20/12/2022
  */
 public final class Test {
+    private Test() {
+
+    }
+
+    /**
+     * Hlavni metoda (entrypoint) kterou se zacina program s testy.
+     * @param args command-line argumenty (zadne nejsou pouzivane.)
+     */
     public static void main(String[] args) {
         try {
             testOptimizationUtils();
