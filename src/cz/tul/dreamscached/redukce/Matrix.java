@@ -167,12 +167,17 @@ public final class Matrix {
 
         // V tomto dvojitem cyklu pro kazdy prvek se provadi kontrola
         // kdyz je to sloupec a radek ktere se potrebuje odstranit
-        for (int i = 0; i < mat.length; i++)
-            for (int j = 0; j < mat[0].length; j++)
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat[0].length; j++) {
+                // Preskoci vsechni nuly protoze nula nemuze byt centrem nenuloveho krizu
+                if (mat[i][j] == 0) continue;
+
                 // Kdyz ty radek a sloupec se potrebuje odstranit tak vrati
                 // jejich polohu jako pole s dva prvky, x a y
                 if (isNonZeroCenterCross(mat, i, j))
                     return new int[]{i, j};
+            }
+        }
 
         // Kdyz zadne radek a sloupec nebyli nalezeny tak vrati null
         return null;
